@@ -3,11 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wether app</title>
+    <link rel="icon" href="/imgs/partly cloud.png">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
+   <div class="card">
+    <div class="serch">
+        <input type="text" id="city" placeholder="city name...">
+        <button onclick="getWeather()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18" width="18" height="18" color="#00000" fill="none">
+            <path d="M17.5 17.5L22 22" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z" stroke="black" stroke-width="1.5" stroke-linejoin="round" />
+        </svg></button>
+    </div>
+    <div class="error"><button><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="https://cdn.hugeicons.com/icons/cancel-circle-half-dot-twotone-rounded.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#d0021b">
+        <path opacity="0.4" d="M15 8.99998L12 12M12 12L9 15M12 12L15 15M12 12L9 8.99998" stroke="#d0021b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47714 17.5228 1.99998 12 1.99998" stroke="#d0021b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path opacity="0.4" d="M2.5 8.49998C2.86239 7.67055 3.3189 6.89164 3.85601 6.17676M6.17681 3.85597C6.89168 3.31886 7.67058 2.86237 8.5 2.49998" stroke="#d0021b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg></button>invalid city</div>
+    <!-- end of serch area -->
+    <!-- wether info starts hear  -->
+    <div class="weather-info">
+        <img src="/imgs/cloud.png" alt="">
+        
+        <div class="tmpe">22°c</div>
+        <div id="cityName">botad</div>
+    </div>
+
+    <div class="other">
+        <div class="box1 box">
+            <img src="/imgs//humidity.png" alt="">
+            <div class="humidity"><div class="humiditylevel">
+                6%
+            </div>
+            <div >humidity</div>
+            </div>
+          
+        </div>
+        <div class="box2 box">
+            <img src="/imgs/wind.png" alt="">
+            <div class="wind">
+                <div class="windspeed">
+                    3km/h
+                </div>
+                <div >windspeed</div>
+                
+            </div>
+           
+        </div>
+
+    </div>
+   </div>
     
 </body>
 </html>
