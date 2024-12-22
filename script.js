@@ -5,7 +5,7 @@ const apiurl = "https://api.openweathermap.org/data/2.5/weather"
 
 async function CheckWeather() {
 
-    const city = document.getElementById("city").value;
+    const city = document.getElementById("text").value;
     const response = await fetch(apiurl + `?q=${city}` + `&units=metric&appid=${apikey}`);
     let data = await response.json();
     console.log(data);
@@ -43,3 +43,17 @@ async function CheckWeather() {
     }
 }
 
+let cityName = document.getElementsByClassName("text")
+document.addEventListener("DOMContentLoaded",()=>{
+    cityName[0].addEventListener("keyup", function(e) {
+        if(e.key === "Enter")
+        {
+            CheckWeather();
+
+        }
+    })
+    
+    
+    
+    
+})
