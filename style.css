@@ -22,7 +22,7 @@ body {
     border-radius: 20px;
     
 }
-.serch{
+.search{
     width: 180px;
     height: 40px;
     background-color: #fff;
@@ -32,13 +32,13 @@ body {
     justify-content: center;
     
 }
-.serch input{
+.search input{
     width: 130px;
     border: none;
     outline: none;
     color: black;
 }
-.serch button{
+.search button{
     background-color: #fff;
     border: none;
     outline: none;
