@@ -41,6 +41,8 @@ body {
 .serch button{
     background-color: #fff;
     border: none;
+    outline: none;
+    border-radius: 50%;
 }
 .weather-info{
     width: 180px;
