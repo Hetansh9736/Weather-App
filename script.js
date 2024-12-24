@@ -16,15 +16,6 @@ async function CheckWeather() {
     document.querySelector(".humiditylevel").innerHTML = data.main.humidity + "%";
     document.querySelector(".windspeed").innerHTML = data.wind.speed + "km/h";
 
-    let cityName = document.getElementsByClassName("text")
-    document.addEventListener("DOMContentLoaded", () => {
-        cityName[0].addEventListener("keyup", function (e) {
-            if (e.key === "Enter") {
-                CheckWeather();
-            }
-        })
-    });
-
     if (data.weather[0].main === "Clouds") {
         weathericon.src = "imgs/cloud.png";
     } else if (data.weather[0].main === "Rain") {
@@ -34,4 +25,15 @@ async function CheckWeather() {
     } else if (data.weather[0].main === "Snow") {
         weathericon.src = "imgs/storm.png";
     }
+    
+    let cityName = document.getElementsByClassName("text")
+    document.addEventListener("DOMContentLoaded", () => {
+        cityName[0].addEventListener("keyup", function (e) {
+            if (e.key === "Enter") {
+                CheckWeather();
+            }
+        })
+    });
+
+    
 }
