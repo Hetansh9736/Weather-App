@@ -17,8 +17,8 @@ body {
 }
 
 .card {
-    width: 90%; /* Adjusted for smaller screens */
-    max-width: 400px; /* Maximum width */
+    width: 90%;
+    max-width: 400px;
     background-image: linear-gradient(135deg, rgb(159, 255, 137), rgb(161, 255, 186), rgb(144, 164, 255));
     padding: 10px;
     border-radius: 20px;
@@ -33,7 +33,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Prevents overflow of elements */
+    overflow: hidden;
 }
 
 .search input {
@@ -125,7 +125,7 @@ body {
     margin-right: 5px;
 }
 
-/* Responsive Design */
+
 @media screen and (max-width: 768px) {
     .card {
         padding: 15px;
